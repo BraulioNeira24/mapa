@@ -4,6 +4,8 @@
 \usepackage{tikz}
 \usetikzlibrary{calc}
 \pagestyle{empty}
+\usepackage{xcolor}
+\definecolor{MiRojo}{HTML}{BA0C2F} % Definimos el nombre "MiRojo" para el código hex
 
 \begin{document}
 
@@ -14,340 +16,84 @@
     \includegraphics[width=0.95\paperwidth]{Mapa.png}
   };
 
-  % ===== Region 1: Northeastern USA (49 capitulos) =====
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.188*\paperwidth, 0.160*\paperheight)$) {}; % Boston U, Kappa Sigma
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.195*\paperwidth, 0.155*\paperheight)$) {}; % City College NY, Beta Pi
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.198*\paperwidth, 0.169*\paperheight)$) {}; % Clarkson, Gamma Gamma
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.196*\paperwidth, 0.155*\paperheight)$) {}; % Columbia, Gamma Lambda
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.196*\paperwidth, 0.154*\paperheight)$) {}; % Cooper Union, Delta Chi
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.202*\paperwidth, 0.161*\paperheight)$) {}; % Cornell, Kappa
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.196*\paperwidth, 0.155*\paperheight)$) {}; % Fairleigh Dickinson, Theta Gamma
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.196*\paperwidth, 0.154*\paperheight)$) {}; % Greater NY Alumni, Greater NY Alumni
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.195*\paperwidth, 0.154*\paperheight)$) {}; % Hofstra, Lambda Xi
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.195*\paperwidth, 0.155*\paperheight)$) {}; % Manhattan, Gamma Alpha
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.188*\paperwidth, 0.160*\paperheight)$) {}; % MIT, Beta Theta
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.196*\paperwidth, 0.153*\paperheight)$) {}; % Monmouth, Zeta Alpha
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.196*\paperwidth, 0.154*\paperheight)$) {}; % NJIT, Gamma Kappa
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.195*\paperwidth, 0.155*\paperheight)$) {}; % NYIT Old Westbury, Iota Psi
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.196*\paperwidth, 0.154*\paperheight)$) {}; % NYIT, Kappa Zeta
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.196*\paperwidth, 0.154*\paperheight)$) {}; % NY Poly School Eng, Theta Theta
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.196*\paperwidth, 0.154*\paperheight)$) {}; % New York Poly, Beta Beta
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.196*\paperwidth, 0.154*\paperheight)$) {}; % NYU, Beta Zeta
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.188*\paperwidth, 0.160*\paperheight)$) {}; % Northeastern, Gamma Beta
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.192*\paperwidth, 0.167*\paperheight)$) {}; % Norwich, Theta Xi
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.196*\paperwidth, 0.154*\paperheight)$) {}; % Poly U NY, Zeta Sigma % CONFIRMED
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.196*\paperwidth, 0.154*\paperheight)$) {}; % Pratt, Delta Theta
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.197*\paperwidth, 0.153*\paperheight)$) {}; % Princeton, Epsilon Pi
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.195*\paperwidth, 0.162*\paperheight)$) {}; % Rensselaer, Beta Nu
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.205*\paperwidth, 0.163*\paperheight)$) {}; % Rochester IT, Iota Iota
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.197*\paperwidth, 0.153*\paperheight)$) {}; % Rutgers, Gamma Epsilon
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.201*\paperwidth, 0.159*\paperheight)$) {}; % SUNY Binghamton, Kappa Epsilon
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.196*\paperwidth, 0.158*\paperheight)$) {}; % SUNY New Paltz, Kappa Omicron
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.208*\paperwidth, 0.163*\paperheight)$) {}; % SUNY Buffalo, Zeta Pi
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.196*\paperwidth, 0.154*\paperheight)$) {}; % Stevens IT, Iota Delta
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.193*\paperwidth, 0.155*\paperheight)$) {}; % SUNY Stony Brook, Theta Mu
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.201*\paperwidth, 0.163*\paperheight)$) {}; % Syracuse, Gamma Eta
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.198*\paperwidth, 0.153*\paperheight)$) {}; % College of NJ, Nu Gamma
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.188*\paperwidth, 0.161*\paperheight)$) {}; % Tufts, Epsilon Delta
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.196*\paperwidth, 0.162*\paperheight)$) {}; % Union College, Phi
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.195*\paperwidth, 0.157*\paperheight)$) {}; % US Military Academy, Iota Phi
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.193*\paperwidth, 0.156*\paperheight)$) {}; % U of Bridgeport, Theta Sigma
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.191*\paperwidth, 0.158*\paperheight)$) {}; % U of Connecticut, Beta Omega
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.192*\paperwidth, 0.158*\paperheight)$) {}; % U of Hartford, Iota Epsilon
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.182*\paperwidth, 0.170*\paperheight)$) {}; % U of Maine, Delta Kappa
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.188*\paperwidth, 0.158*\paperheight)$) {}; % UMass Dartmouth, Zeta Xi
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.192*\paperwidth, 0.161*\paperheight)$) {}; % UMass Amherst, Delta Eta
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.189*\paperwidth, 0.162*\paperheight)$) {}; % UMass Lowell, Epsilon Zeta
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.193*\paperwidth, 0.156*\paperheight)$) {}; % U of New Haven, Zeta Rho
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.189*\paperwidth, 0.157*\paperheight)$) {}; % U of Rhode Island, Zeta Gamma
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.205*\paperwidth, 0.163*\paperheight)$) {}; % U of Rochester, Nu Rho
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.188*\paperwidth, 0.160*\paperheight)$) {}; % Wentworth IT, Mu Mu
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.192*\paperwidth, 0.159*\paperheight)$) {}; % Western New England, Nu Lambda
-  \node[circle, fill=blue, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.190*\paperwidth, 0.160*\paperheight)$) {}; % Worcester Poly, Gamma Delta
+  % ===== 2024-2025 Outstanding Chapter Award Chapters =====
+  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.233*\paperwidth, 0.152*\paperheight)$) {}; % Alpha, U of Illinois Urbana-Champaign
+  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.230*\paperwidth, 0.153*\paperheight)$) {}; % Beta, Purdue University
+  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.211*\paperwidth, 0.153*\paperheight)$) {}; % Beta Delta, U of Pittsburgh
+  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.208*\paperwidth, 0.136*\paperheight)$) {}; % Beta Eta, NC State University
+  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.255*\paperwidth, 0.149*\paperheight)$) {}; % Beta Kappa, Kansas State University
+  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.223*\paperwidth, 0.128*\paperheight)$) {}; % Beta Mu, Georgia Institute of Technology
+  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.209*\paperwidth, 0.137*\paperheight)$) {}; % Delta Lambda, Duke University
+  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.417*\paperwidth, 0.082*\paperheight)$) {}; % Delta Omega, U of Hawaii at Manoa
+  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.188*\paperwidth, 0.161*\paperheight)$) {}; % Epsilon Delta, Tufts University
+  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.231*\paperwidth, 0.150*\paperheight)$) {}; % Epsilon Eta, Rose-Hulman Institute of Technology
+  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.257*\paperwidth, 0.124*\paperheight)$) {}; % Epsilon Mu, U of Texas at Arlington
+  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.218*\paperwidth, 0.113*\paperheight)$) {}; % Epsilon Sigma, U of Florida
+  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.188*\paperwidth, 0.162*\paperheight)$) {}; % Epsilon Zeta, U of Massachusetts Lowell
+  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.195*\paperwidth, 0.155*\paperheight)$) {}; % Gamma Alpha, Manhattan University
+  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.252*\paperwidth, 0.148*\paperheight)$) {}; % Gamma Iota, U of Kansas
+  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.196*\paperwidth, 0.154*\paperheight)$) {}; % Gamma Kappa, New Jersey Institute of Technology
+  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.243*\paperwidth, 0.144*\paperheight)$) {}; % Gamma Theta, Missouri S\&T
+  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.313*\paperwidth, 0.129*\paperheight)$) {}; % Iota Gamma, UCLA
+  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.323*\paperwidth, 0.180*\paperheight)$) {}; % Iota Upsilon, U of Washington
+  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.310*\paperwidth, 0.125*\paperheight)$) {}; % Kappa Psi, UC San Diego
+  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.313*\paperwidth, 0.130*\paperheight)$) {}; % Lambda Beta, CSU Northridge
+  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.257*\paperwidth, 0.126*\paperheight)$) {}; % Lambda Zeta, U of North Texas
+  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (0.269*\paperwidth, 0.013*\paperheight)$) {}; % Mu Alpha, UCSI University Kuala Lumpur
+  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (0.079*\paperwidth, 0.119*\paperheight)$) {}; % Mu Beta, Arab Academy Alexandria
+  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (0.405*\paperwidth, -0.101*\paperheight)$) {}; % Mu Kappa, U of Queensland
+  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (0.021*\paperwidth, 0.171*\paperheight)$) {}; % Mu Nu, Politecnico Di Torino
+  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.231*\paperwidth, 0.157*\paperheight)$) {}; % Nu Theta, Purdue University Northwest
+  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.211*\paperwidth, -0.006*\paperheight)$) {}; % Nu Zeta, ESPOL Ecuador
+  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.219*\paperwidth, 0.132*\paperheight)$) {}; % Zeta Iota, Clemson University
+  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.312*\paperwidth, 0.128*\paperheight)$) {}; % Zeta Omega, UC Irvine
 
-  % ===== Region 2: Eastern USA (32 capitulos) =====
-  \node[circle, fill=cyan!70!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.223*\paperwidth, 0.148*\paperheight)$) {}; % Air Force IT, Delta Xi
-  \node[circle, fill=cyan!70!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.203*\paperwidth, 0.148*\paperheight)$) {}; % Capitol Tech U, Kappa Mu
-  \node[circle, fill=cyan!70!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.211*\paperwidth, 0.153*\paperheight)$) {}; % Carnegie Mellon, Sigma
-  \node[circle, fill=cyan!70!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.216*\paperwidth, 0.157*\paperheight)$) {}; % Case Western Reserve, Zeta
-  \node[circle, fill=cyan!70!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.216*\paperwidth, 0.157*\paperheight)$) {}; % Cleveland State, Epsilon Alpha
-  \node[circle, fill=cyan!70!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.199*\paperwidth, 0.151*\paperheight)$) {}; % Drexel, Beta Alpha
-  \node[circle, fill=cyan!70!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.212*\paperwidth, 0.160*\paperheight)$) {}; % Gannon, Iota Nu
-  \node[circle, fill=cyan!70!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.204*\paperwidth, 0.147*\paperheight)$) {}; % George Mason, Iota Mu
-  \node[circle, fill=cyan!70!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.204*\paperwidth, 0.147*\paperheight)$) {}; % George Washington, Theta Iota
-  \node[circle, fill=cyan!70!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.204*\paperwidth, 0.148*\paperheight)$) {}; % Howard, Lambda Gamma
-  \node[circle, fill=cyan!70!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.203*\paperwidth, 0.149*\paperheight)$) {}; % Johns Hopkins, Gamma Upsilon
-  \node[circle, fill=cyan!70!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.199*\paperwidth, 0.154*\paperheight)$) {}; % Lafayette, Gamma Psi
-  \node[circle, fill=cyan!70!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.199*\paperwidth, 0.154*\paperheight)$) {}; % Lehigh, Chi
-  \node[circle, fill=cyan!70!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.224*\paperwidth, 0.150*\paperheight)$) {}; % Miami U Ohio, Lambda Omicron
-  \node[circle, fill=cyan!70!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.219*\paperwidth, 0.152*\paperheight)$) {}; % Ohio State, Gamma
-  \node[circle, fill=cyan!70!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.217*\paperwidth, 0.149*\paperheight)$) {}; % Ohio U, Delta Epsilon
-  \node[circle, fill=cyan!70!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.206*\paperwidth, 0.155*\paperheight)$) {}; % Penn State, Epsilon
-  \node[circle, fill=cyan!70!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.199*\paperwidth, 0.152*\paperheight)$) {}; % Temple, Iota Sigma
-  \node[circle, fill=cyan!70!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.215*\paperwidth, 0.156*\paperheight)$) {}; % U of Akron, Zeta Zeta
-  \node[circle, fill=cyan!70!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.223*\paperwidth, 0.148*\paperheight)$) {}; % U of Cincinnati, Tau
-  \node[circle, fill=cyan!70!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.223*\paperwidth, 0.151*\paperheight)$) {}; % U of Dayton, Iota Eta
-  \node[circle, fill=cyan!70!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.200*\paperwidth, 0.150*\paperheight)$) {}; % U of Delaware, Epsilon Omicron
-  \node[circle, fill=cyan!70!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.204*\paperwidth, 0.148*\paperheight)$) {}; % U of DC, Iota Tau
-  \node[circle, fill=cyan!70!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.203*\paperwidth, 0.148*\paperheight)$) {}; % U of Maryland, Gamma Xi
-  \node[circle, fill=cyan!70!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.199*\paperwidth, 0.151*\paperheight)$) {}; % U of Pennsylvania, Lambda
-  \node[circle, fill=cyan!70!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.211*\paperwidth, 0.153*\paperheight)$) {}; % U of Pittsburgh, Beta Delta
-  \node[circle, fill=cyan!70!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.200*\paperwidth, 0.157*\paperheight)$) {}; % U of Scranton, Lambda Nu
-  \node[circle, fill=cyan!70!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.202*\paperwidth, 0.148*\paperheight)$) {}; % US Naval Academy, Lambda Kappa
-  \node[circle, fill=cyan!70!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.199*\paperwidth, 0.152*\paperheight)$) {}; % Villanova, Delta Mu
-  \node[circle, fill=cyan!70!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.215*\paperwidth, 0.143*\paperheight)$) {}; % WV Inst Tech, Zeta Omicron
-  \node[circle, fill=cyan!70!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.211*\paperwidth, 0.150*\paperheight)$) {}; % West Virginia U, Beta Rho
-  \node[circle, fill=cyan!70!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.201*\paperwidth, 0.156*\paperheight)$) {}; % Wilkes, Kappa Beta
-
-  % ===== Region 3: Southern USA (46 capitulos) =====
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.226*\paperwidth, 0.124*\paperheight)$) {}; % Auburn, Xi
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.202*\paperwidth, 0.141*\paperheight)$) {}; % Christopher Newport, Mu Omicron
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.219*\paperwidth, 0.132*\paperheight)$) {}; % Clemson, Zeta Iota
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.209*\paperwidth, 0.137*\paperheight)$) {}; % Duke, Delta Lambda
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.205*\paperwidth, 0.135*\paperheight)$) {}; % East Carolina, Mu Lambda
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.214*\paperwidth, 0.111*\paperheight)$) {}; % Embry-Riddle Daytona, Lambda Upsilon
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.223*\paperwidth, 0.116*\paperheight)$) {}; % FAMU-FSU, Lambda Delta
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.212*\paperwidth, 0.101*\paperheight)$) {}; % Florida Atlantic, Nu Omicron
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.213*\paperwidth, 0.107*\paperheight)$) {}; % Florida IT, Zeta Epsilon
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.212*\paperwidth, 0.098*\paperheight)$) {}; % Florida International, Kappa Delta
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.216*\paperwidth, 0.107*\paperheight)$) {}; % Florida Poly, Mu Omega
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.223*\paperwidth, 0.128*\paperheight)$) {}; % Georgia Tech, Beta Mu
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.202*\paperwidth, 0.140*\paperheight)$) {}; % Hampton, Lambda Chi
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.224*\paperwidth, 0.129*\paperheight)$) {}; % Kennesaw State, Nu Epsilon
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.235*\paperwidth, 0.127*\paperheight)$) {}; % Mississippi State, Gamma Omega
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.211*\paperwidth, 0.137*\paperheight)$) {}; % NC A&T, Theta Nu
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.208*\paperwidth, 0.136*\paperheight)$) {}; % NC State, Beta Eta
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.202*\paperwidth, 0.140*\paperheight)$) {}; % Old Dominion, Zeta Upsilon
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.230*\paperwidth, 0.137*\paperheight)$) {}; % Tennessee State, Zeta Kappa
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.226*\paperwidth, 0.137*\paperheight)$) {}; % Tennessee Tech, Epsilon Rho
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.203*\paperwidth, 0.069*\paperheight)$) {}; % U of West Indies Mona, Nu Sigma % CONFIRMED
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.227*\paperwidth, 0.123*\paperheight)$) {}; % Tuskegee, Epsilon Upsilon
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.234*\paperwidth, 0.135*\paperheight)$) {}; % Union University, Lambda Pi
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.229*\paperwidth, 0.127*\paperheight)$) {}; % U of Alabama Birmingham, Iota Alpha
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.229*\paperwidth, 0.132*\paperheight)$) {}; % U of Alabama Huntsville, Theta Eta
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.231*\paperwidth, 0.126*\paperheight)$) {}; % U of Alabama, Delta Nu
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.215*\paperwidth, 0.109*\paperheight)$) {}; % U of Central Florida, Zeta Chi
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.231*\paperwidth, 0.144*\paperheight)$) {}; % U of Evansville, Mu Chi % CONFIRMED
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.218*\paperwidth, 0.113*\paperheight)$) {}; % U of Florida, Epsilon Sigma
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.223*\paperwidth, 0.144*\paperheight)$) {}; % U of Kentucky, Beta Upsilon
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.227*\paperwidth, 0.145*\paperheight)$) {}; % U of Louisville, Epsilon Chi
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.238*\paperwidth, 0.134*\paperheight)$) {}; % U of Memphis, Kappa Lambda
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.212*\paperwidth, 0.098*\paperheight)$) {}; % U of Miami, Epsilon Kappa
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.237*\paperwidth, 0.131*\paperheight)$) {}; % U of Mississippi, Epsilon Omega
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.214*\paperwidth, 0.134*\paperheight)$) {}; % U of NC Charlotte, Kappa Phi
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.215*\paperwidth, 0.115*\paperheight)$) {}; % U of North Florida, Kappa Nu
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.233*\paperwidth, 0.117*\paperheight)$) {}; % U of South Alabama, Theta Lambda
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.214*\paperwidth, 0.129*\paperheight)$) {}; % U of South Carolina, Delta Phi
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.218*\paperwidth, 0.107*\paperheight)$) {}; % U of South Florida, Kappa Xi
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.222*\paperwidth, 0.136*\paperheight)$) {}; % U of Tennessee, Beta Phi
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.208*\paperwidth, 0.144*\paperheight)$) {}; % U of Virginia, Gamma Pi
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.231*\paperwidth, 0.116*\paperheight)$) {}; % U of West Florida, Lambda Alpha
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.229*\paperwidth, 0.137*\paperheight)$) {}; % Vanderbilt, Epsilon Lambda
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.205*\paperwidth, 0.143*\paperheight)$) {}; % Virginia Commonwealth, Kappa Chi
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.210*\paperwidth, 0.143*\paperheight)$) {}; % Virginia Military, Theta Phi % CONFIRMED
-  \node[circle, fill=green!60!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.213*\paperwidth, 0.141*\paperheight)$) {}; % Virginia Tech, Beta Lambda
-
-  % ===== Region 4: Central USA (35 capitulos) =====
-  \node[circle, fill=olive, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.237*\paperwidth, 0.155*\paperheight)$) {}; % Bradley, Delta Upsilon
-  \node[circle, fill=olive, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.232*\paperwidth, 0.158*\paperheight)$) {}; % Illinois IT, Delta
-  \node[circle, fill=olive, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.248*\paperwidth, 0.159*\paperheight)$) {}; % Iowa State, Nu
-  \node[circle, fill=olive, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.221*\paperwidth, 0.163*\paperheight)$) {}; % Kettering, Theta Epsilon
-  \node[circle, fill=olive, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.220*\paperwidth, 0.161*\paperheight)$) {}; % Lawrence Tech, Theta Upsilon
-  \node[circle, fill=olive, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.232*\paperwidth, 0.163*\paperheight)$) {}; % Marquette, Beta Omicron
-  \node[circle, fill=olive, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.223*\paperwidth, 0.162*\paperheight)$) {}; % Michigan State, Gamma Zeta
-  \node[circle, fill=olive, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.234*\paperwidth, 0.178*\paperheight)$) {}; % Michigan Tech, Beta Gamma
-  \node[circle, fill=olive, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.232*\paperwidth, 0.163*\paperheight)$) {}; % Milwaukee School Eng, Iota Beta
-  \node[circle, fill=olive, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.256*\paperwidth, 0.177*\paperheight)$) {}; % North Dakota State, Gamma Tau
-  \node[circle, fill=olive, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.235*\paperwidth, 0.159*\paperheight)$) {}; % Northern Illinois, Kappa Alpha
-  \node[circle, fill=olive, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.232*\paperwidth, 0.159*\paperheight)$) {}; % Northwestern, Beta Tau
-  \node[circle, fill=olive, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.220*\paperwidth, 0.162*\paperheight)$) {}; % Oakland U, Iota Chi
-  \node[circle, fill=olive, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.231*\paperwidth, 0.157*\paperheight)$) {}; % Purdue Northwest, Nu Theta
-  \node[circle, fill=olive, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.228*\paperwidth, 0.151*\paperheight)$) {}; % Purdue Indianapolis, Kappa Rho
-  \node[circle, fill=olive, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.230*\paperwidth, 0.153*\paperheight)$) {}; % Purdue, Beta
-  \node[circle, fill=olive, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.231*\paperwidth, 0.150*\paperheight)$) {}; % Rose-Hulman, Epsilon Eta
-  \node[circle, fill=olive, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.220*\paperwidth, 0.160*\paperheight)$) {}; % SE Michigan Alumni, SE Michigan Alumni
-  \node[circle, fill=olive, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.249*\paperwidth, 0.172*\paperheight)$) {}; % St Cloud State, Iota Omicron
-  \node[circle, fill=olive, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.225*\paperwidth, 0.158*\paperheight)$) {}; % Trine U, Zeta Phi
-  \node[circle, fill=olive, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.220*\paperwidth, 0.161*\paperheight)$) {}; % U of Detroit Mercy, Beta Sigma
-  \node[circle, fill=olive, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.233*\paperwidth, 0.152*\paperheight)$) {}; % U of Illinois Urbana, Alpha
-  \node[circle, fill=olive, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.232*\paperwidth, 0.159*\paperheight)$) {}; % U of Illinois Chicago, Iota Lambda
-  \node[circle, fill=olive, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.242*\paperwidth, 0.158*\paperheight)$) {}; % U of Iowa, Beta Iota
-  \node[circle, fill=olive, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.220*\paperwidth, 0.160*\paperheight)$) {}; % U of Michigan Dearborn, Theta Tau
-  \node[circle, fill=olive, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.221*\paperwidth, 0.160*\paperheight)$) {}; % U of Michigan, Beta Epsilon
-  \node[circle, fill=olive, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.247*\paperwidth, 0.170*\paperheight)$) {}; % U of Minnesota, Omicron
-  \node[circle, fill=olive, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.256*\paperwidth, 0.155*\paperheight)$) {}; % U of Nebraska, Beta Psi
-  \node[circle, fill=olive, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.257*\paperwidth, 0.181*\paperheight)$) {}; % U of North Dakota, Delta Rho
-  \node[circle, fill=olive, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.228*\paperwidth, 0.158*\paperheight)$) {}; % U of Notre Dame, Delta Sigma
-  \node[circle, fill=olive, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.239*\paperwidth, 0.162*\paperheight)$) {}; % U of Wisconsin Platteville, Kappa Theta
-  \node[circle, fill=olive, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.236*\paperwidth, 0.163*\paperheight)$) {}; % U of Wisconsin, Theta
-  \node[circle, fill=olive, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.230*\paperwidth, 0.157*\paperheight)$) {}; % Valparaiso, Mu Rho
-  \node[circle, fill=olive, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.220*\paperwidth, 0.160*\paperheight)$) {}; % Wayne State, Delta Alpha
-  \node[circle, fill=olive, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.226*\paperwidth, 0.160*\paperheight)$) {}; % Western Michigan, Kappa Omega
-
-  % ===== Region 5: Southwestern USA (44 capitulos) =====
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.257*\paperwidth, 0.120*\paperheight)$) {}; % Baylor, Kappa Tau
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.278*\paperwidth, 0.151*\paperheight)$) {}; % Colorado School Mines, Nu Pi
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.278*\paperwidth, 0.154*\paperheight)$) {}; % Colorado State, Delta Pi
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.255*\paperwidth, 0.149*\paperheight)$) {}; % Kansas State, Beta Kappa
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.249*\paperwidth, 0.115*\paperheight)$) {}; % Lamar U Beaumont, Delta Beta
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.241*\paperwidth, 0.116*\paperheight)$) {}; % Louisiana State, Delta Iota
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.245*\paperwidth, 0.124*\paperheight)$) {}; % Louisiana Tech, Delta Gamma
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.243*\paperwidth, 0.144*\paperheight)$) {}; % Missouri S&T, Gamma Theta
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.257*\paperwidth, 0.137*\paperheight)$) {}; % Oklahoma State, Omega
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.254*\paperwidth, 0.115*\paperheight)$) {}; % Prairie View A&M, Zeta Lambda
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.273*\paperwidth, 0.167*\paperheight)$) {}; % South Dakota Mines, Beta Chi
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.256*\paperwidth, 0.168*\paperheight)$) {}; % South Dakota State, Gamma Rho
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.236*\paperwidth, 0.143*\paperheight)$) {}; % Southern IL Carbondale, Lambda Epsilon
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.238*\paperwidth, 0.147*\paperheight)$) {}; % Southern IL Edwardsville, Theta Omicron
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.256*\paperwidth, 0.125*\paperheight)$) {}; % Southern Methodist, Gamma Omicron
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.241*\paperwidth, 0.116*\paperheight)$) {}; % Southern U A&M, Zeta Psi
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.239*\paperwidth, 0.147*\paperheight)$) {}; % St Louis U, Delta Psi
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.259*\paperwidth, 0.105*\paperheight)$) {}; % Texas A&M Kingsville, Zeta Beta
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.255*\paperwidth, 0.117*\paperheight)$) {}; % Texas A&M, Gamma Mu
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.259*\paperwidth, 0.114*\paperheight)$) {}; % Texas State, Mu Upsilon
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.269*\paperwidth, 0.128*\paperheight)$) {}; % Texas Tech, Gamma Nu
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.238*\paperwidth, 0.114*\paperheight)$) {}; % Tulane, Theta Alpha
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.249*\paperwidth, 0.137*\paperheight)$) {}; % U of Arkansas, Gamma Phi
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.278*\paperwidth, 0.154*\paperheight)$) {}; % U of Colorado CS, Theta Chi
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.278*\paperwidth, 0.151*\paperheight)$) {}; % U of Colorado Denver, Theta Zeta
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.278*\paperwidth, 0.152*\paperheight)$) {}; % U of Colorado Boulder, Rho
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.278*\paperwidth, 0.150*\paperheight)$) {}; % U of Denver, Delta Delta
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.252*\paperwidth, 0.113*\paperheight)$) {}; % U of Houston, Epsilon Epsilon
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.252*\paperwidth, 0.148*\paperheight)$) {}; % U of Kansas, Gamma Iota
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.244*\paperwidth, 0.148*\paperheight)$) {}; % U of Missouri Columbia, Iota
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.250*\paperwidth, 0.148*\paperheight)$) {}; % U of Missouri KC, Theta Pi
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.238*\paperwidth, 0.114*\paperheight)$) {}; % U of New Orleans, Iota Rho
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.257*\paperwidth, 0.126*\paperheight)$) {}; % U of North Texas, Lambda Zeta
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.258*\paperwidth, 0.134*\paperheight)$) {}; % U of Oklahoma, Beta Xi
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.243*\paperwidth, 0.115*\paperheight)$) {}; % U of Southwestern LA, Delta Tau
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.257*\paperwidth, 0.124*\paperheight)$) {}; % U of Texas Arlington, Epsilon Mu
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.281*\paperwidth, 0.121*\paperheight)$) {}; % U of Texas El Paso, Zeta Delta
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.261*\paperwidth, 0.113*\paperheight)$) {}; % U of Texas SA, Kappa Upsilon
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.256*\paperwidth, 0.125*\paperheight)$) {}; % U of Texas Dallas, Kappa Kappa
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.258*\paperwidth, 0.115*\paperheight)$) {}; % U of Texas Austin, Psi
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.254*\paperwidth, 0.137*\paperheight)$) {}; % U of Tulsa, Zeta Nu
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.239*\paperwidth, 0.147*\paperheight)$) {}; % Washington U St Louis, Delta Zeta
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.257*\paperwidth, 0.143*\paperheight)$) {}; % Wichita State, Epsilon Xi
-  \node[circle, fill=orange!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.252*\paperwidth, 0.113*\paperheight)$) {}; % William Marsh Rice, Theta Rho
-
-  % ===== Region 6: Western USA (50 capitulos) =====
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.296*\paperwidth, 0.127*\paperheight)$) {}; % Arizona State, Epsilon Beta
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.307*\paperwidth, 0.165*\paperheight)$) {}; % Boise State, Kappa Pi % CONFIRMED
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.295*\paperwidth, 0.153*\paperheight)$) {}; % Brigham Young, Zeta Eta
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.312*\paperwidth, 0.130*\paperheight)$) {}; % Caltech, Iota Pi
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.319*\paperwidth, 0.134*\paperheight)$) {}; % Cal Poly SLO, Epsilon Phi
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.311*\paperwidth, 0.129*\paperheight)$) {}; % Cal Poly Pomona, Zeta Theta
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.312*\paperwidth, 0.128*\paperheight)$) {}; % Cal State Long Beach, Epsilon Theta
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.313*\paperwidth, 0.130*\paperheight)$) {}; % Cal State Northridge, Lambda Beta
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.322*\paperwidth, 0.151*\paperheight)$) {}; % Cal State Chico, Iota Zeta
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.312*\paperwidth, 0.129*\paperheight)$) {}; % Cal State Fullerton, Iota Omega
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.317*\paperwidth, 0.139*\paperheight)$) {}; % Cal State Fresno, Theta Kappa
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.312*\paperwidth, 0.129*\paperheight)$) {}; % Cal State LA, Epsilon Nu
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.321*\paperwidth, 0.146*\paperheight)$) {}; % Cal State Sacramento, Nu Upsilon
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.311*\paperwidth, 0.179*\paperheight)$) {}; % Eastern Washington, Mu Delta % CONFIRMED
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.297*\paperwidth, 0.131*\paperheight)$) {}; % Embry-Riddle Prescott, Kappa Iota
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.313*\paperwidth, 0.129*\paperheight)$) {}; % LA Alumni Chapter, LA Alumni
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.294*\paperwidth, 0.173*\paperheight)$) {}; % Montana State, Iota Kappa % CONFIRMED
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.322*\paperwidth, 0.139*\paperheight)$) {}; % Naval Postgraduate, Theta Delta
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.282*\paperwidth, 0.123*\paperheight)$) {}; % New Mexico State, Gamma Chi
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.313*\paperwidth, 0.129*\paperheight)$) {}; % Northrop U, Zeta Mu
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.326*\paperwidth, 0.169*\paperheight)$) {}; % Oregon State, Pi
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.324*\paperwidth, 0.172*\paperheight)$) {}; % Portland State, Iota Theta % CONFIRMED
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.310*\paperwidth, 0.125*\paperheight)$) {}; % San Diego State, Zeta Tau
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.324*\paperwidth, 0.143*\paperheight)$) {}; % San Francisco Alumni, SF Alumni
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.322*\paperwidth, 0.142*\paperheight)$) {}; % San Jose State, Epsilon Iota
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.322*\paperwidth, 0.142*\paperheight)$) {}; % Santa Clara, Epsilon Psi
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.323*\paperwidth, 0.180*\paperheight)$) {}; % Seattle U, Mu Iota % CONFIRMED
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.391*\paperwidth, 0.245*\paperheight)$) {}; % U of Alaska Fairbanks, Kappa Gamma % CONFIRMED
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.293*\paperwidth, 0.123*\paperheight)$) {}; % U of Arizona, Iota Xi
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.310*\paperwidth, 0.125*\paperheight)$) {}; % UC San Diego, Kappa Psi
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.317*\paperwidth, 0.131*\paperheight)$) {}; % UC Santa Barbara, Epsilon Tau
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.323*\paperwidth, 0.144*\paperheight)$) {}; % UC Berkeley, Mu
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.312*\paperwidth, 0.128*\paperheight)$) {}; % UC Irvine, Zeta Omega
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.313*\paperwidth, 0.129*\paperheight)$) {}; % UCLA, Iota Gamma
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.323*\paperwidth, 0.140*\paperheight)$) {}; % UC Santa Cruz, Mu Phi
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.322*\paperwidth, 0.146*\paperheight)$) {}; % UC Davis, Nu Mu
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.310*\paperwidth, 0.129*\paperheight)$) {}; % UC Riverside, Lambda Sigma
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.417*\paperwidth, 0.082*\paperheight)$) {}; % U of Hawaii Manoa, Delta Omega
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.304*\paperwidth, 0.137*\paperheight)$) {}; % U of Nevada Las Vegas, Nu Xi
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.317*\paperwidth, 0.150*\paperheight)$) {}; % U of Nevada Reno, Theta Psi
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.282*\paperwidth, 0.133*\paperheight)$) {}; % U of New Mexico, Delta Omicron
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.325*\paperwidth, 0.172*\paperheight)$) {}; % U of Portland, Theta Beta
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.310*\paperwidth, 0.125*\paperheight)$) {}; % U of San Diego, Kappa Eta
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.313*\paperwidth, 0.129*\paperheight)$) {}; % U of Southern California, Upsilon
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.321*\paperwidth, 0.144*\paperheight)$) {}; % U of Pacific, Theta Omega
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.221*\paperwidth, 0.158*\paperheight)$) {}; % U of Toledo, Epsilon Gamma % CONFIRMED
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.296*\paperwidth, 0.154*\paperheight)$) {}; % U of Utah, Gamma Sigma
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.324*\paperwidth, 0.178*\paperheight)$) {}; % U of Washington Tacoma, Nu Delta
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.323*\paperwidth, 0.180*\paperheight)$) {}; % U of Washington, Iota Upsilon
-  \node[circle, fill=red, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.324*\paperwidth, 0.184*\paperheight)$) {}; % Western Washington, Mu Zeta % CONFIRMED
-
-  % ===== Region 7: Canada (1 capitulo) - CONFIRMED CORRECT =====
-  \node[circle, fill=violet, inner sep=2mm, opacity=0.9] at ($(current page.center) + (-0.165*\paperwidth, 0.169*\paperheight)$) {}; % Dalhousie, Lambda Theta
-
-  % ===== Region 8: Africa, Europe, Middle East (12 capitulos) - CONFIRMED CORRECT =====
-  \node[circle, fill=magenta!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (0.148*\paperwidth, 0.097*\paperheight)$) {}; % American U Sharjah, Lambda Lambda
-  \node[circle, fill=magenta!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (0.080*\paperwidth, 0.116*\paperheight)$) {}; % Arab Academy Alexandria, Mu Beta
-  \node[circle, fill=magenta!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (0.145*\paperwidth, 0.092*\paperheight)$) {}; % Khalifa U, Lambda Phi
-  \node[circle, fill=magenta!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (0.050*\paperwidth, 0.175*\paperheight)$) {}; % Obuda U, Nu Iota
-  \node[circle, fill=magenta!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (0.022*\paperwidth, 0.173*\paperheight)$) {}; % Politecnico Di Torino, Mu Nu
-  \node[circle, fill=magenta!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (0.033*\paperwidth, 0.123*\paperheight)$) {}; % South Mediterranean U, Nu Tau
-  \node[circle, fill=magenta!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (0.136*\paperwidth, 0.095*\paperheight)$) {}; % Texas A&M Qatar, Lambda Mu
-  \node[circle, fill=magenta!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.010*\paperwidth, 0.150*\paperheight)$) {}; % UNED Spain, Nu Alpha
-  \node[circle, fill=magenta!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (-0.010*\paperwidth, 0.150*\paperheight)$) {}; % U Politecnica Madrid, Nu Beta
-  \node[circle, fill=magenta!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (0.147*\paperwidth, 0.094*\paperheight)$) {}; % U of Dubai, Nu Nu
-  \node[circle, fill=magenta!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (0.073*\paperwidth, -0.098*\paperheight)$) {}; % U of Johannesburg, Lambda Psi
-  \node[circle, fill=magenta!80!black, inner sep=1mm, opacity=0.9] at ($(current page.center) + (0.081*\paperwidth, -0.110*\paperheight)$) {}; % U of KwaZulu-Natal, Mu Eta
-
-  % ===== Region 9: Latin America (5 capitulos) - CONFIRMED CORRECT =====
-  \node[circle, fill=brown!80!black, inner sep=2mm, opacity=0.9] at ($(current page.center) + (-0.211*\paperwidth, -0.010*\paperheight)$) {}; % ESPOL Ecuador, Nu Zeta
-  \node[circle, fill=brown!80!black, inner sep=2mm, opacity=0.9] at ($(current page.center) + (-0.174*\paperwidth, 0.069*\paperheight)$) {}; % Poly U Puerto Rico, Mu Gamma
-  \node[circle, fill=brown!80!black, inner sep=2mm, opacity=0.9] at ($(current page.center) + (-0.265*\paperwidth, 0.104*\paperheight)$) {}; % Tecnologico Monterrey, Lambda Rho
-  \node[circle, fill=brown!80!black, inner sep=2mm, opacity=0.9] at ($(current page.center) + (-0.264*\paperwidth, 0.075*\paperheight)$) {}; % U Autonoma Queretaro, Mu Psi
-  \node[circle, fill=brown!80!black, inner sep=2mm, opacity=0.9] at ($(current page.center) + (-0.170*\paperwidth, 0.068*\paperheight)$) {}; % U Puerto Rico Mayaguez, Lambda Tau
-
-  % ===== Region 10: Asia and Pacific (13 capitulos) - CONFIRMED CORRECT =====
-  \node[circle, fill=teal, inner sep=1mm, opacity=0.9] at ($(current page.center) + (0.203*\paperwidth, 0.109*\paperheight)$) {}; % Bharati Vidyapeeth Delhi, Lambda Eta
-  \node[circle, fill=teal, inner sep=1mm, opacity=0.9] at ($(current page.center) + (0.265*\paperwidth, 0.053*\paperheight)$) {}; % Chulalongkorn U Bangkok, Mu Theta
-  \node[circle, fill=teal, inner sep=1mm, opacity=0.9] at ($(current page.center) + (0.208*\paperwidth, 0.062*\paperheight)$) {}; % GH Raisoni Nagpur, Mu Pi
-  \node[circle, fill=teal, inner sep=1mm, opacity=0.9] at ($(current page.center) + (0.205*\paperwidth, 0.043*\paperheight)$) {}; % Indian Inst Science Bangalore, Mu Xi
-  \node[circle, fill=teal, inner sep=1mm, opacity=0.9] at ($(current page.center) + (0.319*\paperwidth, 0.090*\paperheight)$) {}; % National Chiao Tung, Mu Sigma
-  \node[circle, fill=teal, inner sep=1mm, opacity=0.9] at ($(current page.center) + (0.274*\paperwidth, 0.006*\paperheight)$) {}; % Natl U Singapore, Lambda Omega
-  \node[circle, fill=teal, inner sep=1mm, opacity=0.9] at ($(current page.center) + (0.274*\paperwidth, 0.006*\paperheight)$) {}; % Singapore U Tech Design, Mu Epsilon
-  \node[circle, fill=teal, inner sep=1mm, opacity=0.9] at ($(current page.center) + (0.211*\paperwidth, 0.049*\paperheight)$) {}; % Sri Sai Ram Chennai, Nu Eta
-  \node[circle, fill=teal, inner sep=1mm, opacity=0.9] at ($(current page.center) + (0.301*\paperwidth, 0.088*\paperheight)$) {}; % U of Hong Kong, Lambda Iota
-  \node[circle, fill=teal, inner sep=1mm, opacity=0.9] at ($(current page.center) + (0.268*\paperwidth, 0.015*\paperheight)$) {}; % UCSI U Kuala Lumpur, Mu Alpha
-  \node[circle, fill=teal, inner sep=1mm, opacity=0.9] at ($(current page.center) + (0.404*\paperwidth, -0.107*\paperheight)$) {}; % U of Queensland, Mu Kappa
-  \node[circle, fill=teal, inner sep=1mm, opacity=0.9] at ($(current page.center) + (0.195*\paperwidth, 0.070*\paperheight)$) {}; % Vardhaman Engineering, Nu Kappa
-  \node[circle, fill=teal, inner sep=1mm, opacity=0.9] at ($(current page.center) + (0.369*\paperwidth, 0.133*\paperheight)$) {}; % Waseda U, Mu Tau
-
-  % ===== LEYENDA (Oceano Pacifico, junto a Sudamerica) =====
+  % ===== LEYENDA =====
   \node[rectangle, draw=black, line width=0.8pt, fill=white, fill opacity=0.95,
-        text opacity=1, rounded corners=3pt,
+        text opacity=1, rounded corners=4pt,
         font=\normalsize, anchor=center]
-    at ($(current page.center) + (-0.385*\paperwidth, -0.04*\paperheight)$) {
-    \renewcommand{\arraystretch}{1.4}
-    \begin{tabular}{@{\hspace{4pt}}cl@{\hspace{4pt}}}
-      \multicolumn{2}{@{\hspace{4pt}}l@{\hspace{4pt}}}{\large\textbf{IEEE-HKN Chapters by Region}} \\[2pt]
-      \hline \\[-6pt]
-      \textcolor{blue}{\Large$\bullet$} & \textbf{R1:} Northeastern USA \textit{(49)} \\
-      \textcolor{cyan!70!black}{\Large$\bullet$} & \textbf{R2:} Eastern USA \textit{(32)} \\
-      \textcolor{green!60!black}{\Large$\bullet$} & \textbf{R3:} Southern USA \textit{(46)} \\
-      \textcolor{olive}{\Large$\bullet$} & \textbf{R4:} Central USA \textit{(35)} \\
-      \textcolor{orange!80!black}{\Large$\bullet$} & \textbf{R5:} Southwestern USA \textit{(44)} \\
-      \textcolor{red}{\Large$\bullet$} & \textbf{R6:} Western USA \textit{(50)} \\
-      \textcolor{violet}{\Large$\bullet$} & \textbf{R7:} Canada \textit{(1)} \\
-      \textcolor{magenta!80!black}{\Large$\bullet$} & \textbf{R8:} Africa, Europe, Middle East \textit{(12)} \\
-      \textcolor{brown!80!black}{\Large$\bullet$} & \textbf{R9:} Latin America \textit{(5)} \\
-      \textcolor{teal}{\Large$\bullet$} & \textbf{R10:} Asia and Pacific \textit{(13)} \\
-      \multicolumn{2}{@{\hspace{4pt}}l@{\hspace{4pt}}}{\rule{0pt}{8pt}\textbf{Total: 287 chapters}} \\
-    \end{tabular}
+    at ($(current page.center) + (-0.365*\paperwidth, -0.15*\paperheight)$) {
+    \parbox{10cm}{\centering
+      \large\textbf{Chapters}\\[4pt]
+      \parbox{9cm}{\small
+        $\bullet$ Alpha Chapter -- University of Illinois, Urbana-Champaign\\
+        $\bullet$ Beta Chapter -- Purdue University\\
+        $\bullet$ Beta Delta Chapter -- University of Pittsburgh\\
+        $\bullet$ Beta Eta Chapter -- North Carolina State University\\
+        $\bullet$ Beta Kappa Chapter -- Kansas State University\\
+        $\bullet$ Beta Mu Chapter -- Georgia Institute of Technology\\
+        $\bullet$ Delta Lambda Chapter -- Duke University\\
+        $\bullet$ Delta Omega Chapter -- University of Hawaii at Manoa\\
+        $\bullet$ Epsilon Delta Chapter -- Tufts University\\
+        $\bullet$ Epsilon Eta Chapter -- Rose-Hulman Institute of Technology\\
+        $\bullet$ Epsilon Mu Chapter -- University of Texas at Arlington\\
+        $\bullet$ Epsilon Sigma Chapter -- University of Florida\\
+        $\bullet$ Epsilon Zeta Chapter -- University of Massachusetts, Lowell\\
+        $\bullet$ Gamma Alpha Chapter -- Manhattan University\\
+        $\bullet$ Gamma Iota Chapter -- University of Kansas\\
+        $\bullet$ Gamma Kappa Chapter -- New Jersey Institute of Technology\\
+        $\bullet$ Gamma Theta Chapter -- Missouri University of Science and Technology\\
+        $\bullet$ Iota Gamma Chapter -- University of California, Los Angeles\\
+        $\bullet$ Iota Upsilon Chapter -- University of Washington\\
+        $\bullet$ Kappa Psi Chapter -- University of California San Diego\\
+        $\bullet$ Lambda Beta Chapter -- California State University, Northridge\\
+        $\bullet$ Lambda Zeta Chapter -- University of North Texas\\
+        $\bullet$ Mu Alpha Chapter -- UCSI University -- Kuala Lumpur\\
+        $\bullet$ Mu Beta Chapter -- Arab Academy For Science \& Tech -- Alexandria\\
+        $\bullet$ Mu Kappa Chapter -- University of Queensland\\
+        $\bullet$ Mu Nu Chapter -- Politecnico Di Torino\\
+        $\bullet$ Nu Theta Chapter -- Purdue University Northwest\\
+        $\bullet$ Nu Zeta Chapter -- Escuela Superior Politécnica del Litoral\\
+        $\bullet$ Zeta Iota Chapter -- Clemson University\\
+        $\bullet$ Zeta Omega Chapter -- University of California, Irvine
+      }
+    }
   };
 
   % ===== TITULO =====
   \node[font=\Huge\bfseries, anchor=north]
-    at ($(current page.north) + (0, -0.4cm)$) {
-    Global Network of IEEE Eta Kappa Nu (IEEE-HKN) Chapters
+    at ($(current page.north) + (0, -3cm)$) {
+    2024--2025 Outstanding Chapter Award (OCA)
   };
 
 \end{tikzpicture}
