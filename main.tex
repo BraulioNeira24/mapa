@@ -5,96 +5,91 @@
 \usetikzlibrary{calc}
 \pagestyle{empty}
 \usepackage{xcolor}
-\definecolor{MiRojo}{HTML}{BA0C2F} % Definimos el nombre "MiRojo" para el código hex
+\definecolor{MiRojo}{HTML}{BA0C2F}
 
 \begin{document}
 
-\begin{tikzpicture}[remember picture, overlay]
+\begin{tikzpicture}[remember picture, overlay,
+  chapter node/.style={circle, fill=MiRojo, minimum size=5mm, text=white, font=\tiny, opacity=0.95}
+]
 
-  % MAPA FIJO AL CENTRO
   \node[inner sep=0, anchor=center] (mapa) at (current page.center) {
     \includegraphics[width=0.95\paperwidth]{Mapa.png}
   };
 
-  % ===== 2024-2025 Outstanding Chapter Award Chapters =====
-  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.233*\paperwidth, 0.152*\paperheight)$) {}; % Alpha, U of Illinois Urbana-Champaign
-  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.230*\paperwidth, 0.153*\paperheight)$) {}; % Beta, Purdue University
-  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.211*\paperwidth, 0.153*\paperheight)$) {}; % Beta Delta, U of Pittsburgh
-  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.208*\paperwidth, 0.136*\paperheight)$) {}; % Beta Eta, NC State University
-  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.255*\paperwidth, 0.149*\paperheight)$) {}; % Beta Kappa, Kansas State University
-  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.223*\paperwidth, 0.128*\paperheight)$) {}; % Beta Mu, Georgia Institute of Technology
-  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.209*\paperwidth, 0.137*\paperheight)$) {}; % Delta Lambda, Duke University
-  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.417*\paperwidth, 0.082*\paperheight)$) {}; % Delta Omega, U of Hawaii at Manoa
-  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.188*\paperwidth, 0.161*\paperheight)$) {}; % Epsilon Delta, Tufts University
-  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.231*\paperwidth, 0.150*\paperheight)$) {}; % Epsilon Eta, Rose-Hulman Institute of Technology
-  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.257*\paperwidth, 0.124*\paperheight)$) {}; % Epsilon Mu, U of Texas at Arlington
-  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.218*\paperwidth, 0.113*\paperheight)$) {}; % Epsilon Sigma, U of Florida
-  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.188*\paperwidth, 0.162*\paperheight)$) {}; % Epsilon Zeta, U of Massachusetts Lowell
-  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.195*\paperwidth, 0.155*\paperheight)$) {}; % Gamma Alpha, Manhattan University
-  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.252*\paperwidth, 0.148*\paperheight)$) {}; % Gamma Iota, U of Kansas
-  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.196*\paperwidth, 0.154*\paperheight)$) {}; % Gamma Kappa, New Jersey Institute of Technology
-  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.243*\paperwidth, 0.144*\paperheight)$) {}; % Gamma Theta, Missouri S\&T
-  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.313*\paperwidth, 0.129*\paperheight)$) {}; % Iota Gamma, UCLA
-  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.323*\paperwidth, 0.180*\paperheight)$) {}; % Iota Upsilon, U of Washington
-  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.310*\paperwidth, 0.125*\paperheight)$) {}; % Kappa Psi, UC San Diego
-  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.313*\paperwidth, 0.130*\paperheight)$) {}; % Lambda Beta, CSU Northridge
-  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.257*\paperwidth, 0.126*\paperheight)$) {}; % Lambda Zeta, U of North Texas
-  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (0.269*\paperwidth, 0.013*\paperheight)$) {}; % Mu Alpha, UCSI University Kuala Lumpur
-  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (0.079*\paperwidth, 0.119*\paperheight)$) {}; % Mu Beta, Arab Academy Alexandria
-  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (0.405*\paperwidth, -0.101*\paperheight)$) {}; % Mu Kappa, U of Queensland
-  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (0.021*\paperwidth, 0.171*\paperheight)$) {}; % Mu Nu, Politecnico Di Torino
-  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.231*\paperwidth, 0.157*\paperheight)$) {}; % Nu Theta, Purdue University Northwest
-  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.211*\paperwidth, -0.006*\paperheight)$) {}; % Nu Zeta, ESPOL Ecuador
-  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.219*\paperwidth, 0.132*\paperheight)$) {}; % Zeta Iota, Clemson University
-  \node[circle, fill=MiRojo, inner sep=2.5mm, opacity=0.95] at ($(current page.center) + (-0.312*\paperwidth, 0.128*\paperheight)$) {}; % Zeta Omega, UC Irvine
+  \node[chapter node] at ($(current page.center) + (-0.233*\paperwidth, 0.160*\paperheight)$) {1}; % Alpha, U of Illinois Urbana-Champaign
+  \node[chapter node] at ($(current page.center) + (-0.220*\paperwidth, 0.153*\paperheight)$) {2}; % Beta, Purdue University
+  \node[chapter node] at ($(current page.center) + (-0.211*\paperwidth, 0.161*\paperheight)$) {3}; % Beta Delta, U of Pittsburgh
+  \node[chapter node] at ($(current page.center) + (-0.213*\paperwidth, 0.143*\paperheight)$) {4}; % Beta Eta, NC State University
+  \node[chapter node] at ($(current page.center) + (-0.265*\paperwidth, 0.149*\paperheight)$) {5}; % Beta Kappa, Kansas State University
+  \node[chapter node] at ($(current page.center) + (-0.223*\paperwidth, 0.113*\paperheight)$) {6}; % Beta Mu, Georgia Institute of Technology
+  \node[chapter node] at ($(current page.center) + (-0.205*\paperwidth, 0.137*\paperheight)$) {7}; % Delta Lambda, Duke University
+  \node[chapter node] at ($(current page.center) + (-0.417*\paperwidth, 0.082*\paperheight)$) {8}; % Delta Omega, U of Hawaii at Manoa
+  \node[chapter node] at ($(current page.center) + (-0.198*\paperwidth, 0.161*\paperheight)$) {9}; % Epsilon Delta, Tufts University
+  \node[chapter node] at ($(current page.center) + (-0.231*\paperwidth, 0.135*\paperheight)$) {10}; % Epsilon Eta, Rose-Hulman Institute of Technology
+  \node[chapter node] at ($(current page.center) + (-0.257*\paperwidth, 0.114*\paperheight)$) {11}; % Epsilon Mu, U of Texas at Arlington
+  \node[chapter node] at ($(current page.center) + (-0.218*\paperwidth, 0.103*\paperheight)$) {12}; % Epsilon Sigma, U of Florida
+  \node[chapter node] at ($(current page.center) + (-0.188*\paperwidth, 0.165*\paperheight)$) {13}; % Epsilon Zeta, U of Massachusetts Lowell
+  \node[chapter node] at ($(current page.center) + (-0.192*\paperwidth, 0.153*\paperheight)$) {14}; % Gamma Alpha, Manhattan University
+  \node[chapter node] at ($(current page.center) + (-0.242*\paperwidth, 0.148*\paperheight)$) {15}; % Gamma Iota, U of Kansas
+  \node[chapter node] at ($(current page.center) + (-0.200*\paperwidth, 0.1475*\paperheight)$) {16}; % Gamma Kappa, New Jersey Institute of Technology
+  \node[chapter node] at ($(current page.center) + (-0.243*\paperwidth, 0.134*\paperheight)$) {17}; % Gamma Theta, Missouri S&T
+  \node[chapter node] at ($(current page.center) + (-0.313*\paperwidth, 0.129*\paperheight)$) {18}; % Iota Gamma, UCLA
+  \node[chapter node] at ($(current page.center) + (-0.323*\paperwidth, 0.180*\paperheight)$) {19}; % Iota Upsilon, U of Washington
+  \node[chapter node] at ($(current page.center) + (-0.303*\paperwidth, 0.115*\paperheight)$) {20}; % Kappa Psi, UC San Diego
+  \node[chapter node] at ($(current page.center) + (-0.318*\paperwidth, 0.142\paperheight)$) {21}; % Lambda Beta, CSU Northridge
+  \node[chapter node] at ($(current page.center) + (-0.257*\paperwidth, 0.134*\paperheight)$) {22}; % Lambda Zeta, U of North Texas
+  \node[chapter node] at ($(current page.center) + (0.269*\paperwidth, 0.013*\paperheight)$) {23}; % Mu Alpha, UCSI University Kuala Lumpur
+  \node[chapter node] at ($(current page.center) + (0.079*\paperwidth, 0.119*\paperheight)$) {24}; % Mu Beta, Arab Academy Alexandria
+  \node[chapter node] at ($(current page.center) + (0.405*\paperwidth, -0.101*\paperheight)$) {25}; % Mu Kappa, U of Queensland
+  \node[chapter node] at ($(current page.center) + (0.021*\paperwidth, 0.171*\paperheight)$) {26}; % Mu Nu, Politecnico Di Torino
+  \node[chapter node] at ($(current page.center) + (-0.231*\paperwidth, 0.172*\paperheight)$) {27}; % Nu Theta, Purdue University Northwest
+  \node[chapter node] at ($(current page.center) + (-0.211*\paperwidth, -0.006*\paperheight)$) {28}; % Nu Zeta, ESPOL Ecuador
+  \node[chapter node] at ($(current page.center) + (-0.219*\paperwidth, 0.132*\paperheight)$) {29}; % Zeta Iota, Clemson University
+  \node[chapter node] at ($(current page.center) + (-0.303*\paperwidth, 0.129*\paperheight)$) {30}; % Zeta Omega, UC Irvine
 
-  % ===== LEYENDA =====
   \node[rectangle, draw=black, line width=0.8pt, fill=white, fill opacity=0.95,
-        text opacity=1, rounded corners=4pt,
-        font=\normalsize, anchor=center]
+        text opacity=1, rounded corners=4pt, font=\normalsize, anchor=center]
     at ($(current page.center) + (-0.365*\paperwidth, -0.15*\paperheight)$) {
-    \parbox{10cm}{\centering
+    \parbox{12cm}{\centering
       \large\textbf{Chapters}\\[4pt]
-      \parbox{9cm}{\small
-        $\bullet$ Alpha Chapter -- University of Illinois, Urbana-Champaign\\
-        $\bullet$ Beta Chapter -- Purdue University\\
-        $\bullet$ Beta Delta Chapter -- University of Pittsburgh\\
-        $\bullet$ Beta Eta Chapter -- North Carolina State University\\
-        $\bullet$ Beta Kappa Chapter -- Kansas State University\\
-        $\bullet$ Beta Mu Chapter -- Georgia Institute of Technology\\
-        $\bullet$ Delta Lambda Chapter -- Duke University\\
-        $\bullet$ Delta Omega Chapter -- University of Hawaii at Manoa\\
-        $\bullet$ Epsilon Delta Chapter -- Tufts University\\
-        $\bullet$ Epsilon Eta Chapter -- Rose-Hulman Institute of Technology\\
-        $\bullet$ Epsilon Mu Chapter -- University of Texas at Arlington\\
-        $\bullet$ Epsilon Sigma Chapter -- University of Florida\\
-        $\bullet$ Epsilon Zeta Chapter -- University of Massachusetts, Lowell\\
-        $\bullet$ Gamma Alpha Chapter -- Manhattan University\\
-        $\bullet$ Gamma Iota Chapter -- University of Kansas\\
-        $\bullet$ Gamma Kappa Chapter -- New Jersey Institute of Technology\\
-        $\bullet$ Gamma Theta Chapter -- Missouri University of Science and Technology\\
-        $\bullet$ Iota Gamma Chapter -- University of California, Los Angeles\\
-        $\bullet$ Iota Upsilon Chapter -- University of Washington\\
-        $\bullet$ Kappa Psi Chapter -- University of California San Diego\\
-        $\bullet$ Lambda Beta Chapter -- California State University, Northridge\\
-        $\bullet$ Lambda Zeta Chapter -- University of North Texas\\
-        $\bullet$ Mu Alpha Chapter -- UCSI University -- Kuala Lumpur\\
-        $\bullet$ Mu Beta Chapter -- Arab Academy For Science \& Tech -- Alexandria\\
-        $\bullet$ Mu Kappa Chapter -- University of Queensland\\
-        $\bullet$ Mu Nu Chapter -- Politecnico Di Torino\\
-        $\bullet$ Nu Theta Chapter -- Purdue University Northwest\\
-        $\bullet$ Nu Zeta Chapter -- Escuela Superior Politécnica del Litoral\\
-        $\bullet$ Zeta Iota Chapter -- Clemson University\\
-        $\bullet$ Zeta Omega Chapter -- University of California, Irvine
+      \parbox{11cm}{\small
+        1. Alpha Chapter -- University of Illinois, Urbana-Champaign\\
+        2. Beta Chapter -- Purdue University\\
+        3. Beta Delta Chapter -- University of Pittsburgh\\
+        4. Beta Eta Chapter -- North Carolina State University\\
+        5. Beta Kappa Chapter -- Kansas State University\\
+        6. Beta Mu Chapter -- Georgia Institute of Technology\\
+        7. Delta Lambda Chapter -- Duke University\\
+        8. Delta Omega Chapter -- University of Hawaii at Manoa\\
+        9. Epsilon Delta Chapter -- Tufts University\\
+        10. Epsilon Eta Chapter -- Rose-Hulman Institute of Technology\\
+        11. Epsilon Mu Chapter -- University of Texas at Arlington\\
+        12. Epsilon Sigma Chapter -- University of Florida\\
+        13. Epsilon Zeta Chapter -- University of Massachusetts, Lowell\\
+        14. Gamma Alpha Chapter -- Manhattan University\\
+        15. Gamma Iota Chapter -- University of Kansas\\
+        16. Gamma Kappa Chapter -- New Jersey Institute of Technology\\
+        17. Gamma Theta Chapter -- Missouri University of Science and Technology\\
+        18. Iota Gamma Chapter -- University of California, Los Angeles\\
+        19. Iota Upsilon Chapter -- University of Washington\\
+        20. Kappa Psi Chapter -- University of California San Diego\\
+        21. Lambda Beta Chapter -- California State University, Northridge\\
+        22. Lambda Zeta Chapter -- University of North Texas\\
+        23. Mu Alpha Chapter -- UCSI University -- Kuala Lumpur\\
+        24. Mu Beta Chapter -- Arab Academy For Science \& Tech -- Alexandria\\
+        25. Mu Kappa Chapter -- University of Queensland\\
+        26. Mu Nu Chapter -- Politecnico Di Torino\\
+        27. Nu Theta Chapter -- Purdue University Northwest\\
+        28. Nu Zeta Chapter -- Escuela Superior Politécnica del Litoral\\
+        29. Zeta Iota Chapter -- Clemson University\\
+        30. Zeta Omega Chapter -- University of California, Irvine
       }
     }
   };
 
-  % ===== TITULO =====
   \node[font=\Huge\bfseries, anchor=north]
-    at ($(current page.north) + (0, -3cm)$) {
-    2024--2025 Outstanding Chapter Award (OCA)
-  };
+    at ($(current page.north) + (0, -3cm)$) {2024--2025 Outstanding Chapter Award (OCA)};
 
 \end{tikzpicture}
 \end{document}
